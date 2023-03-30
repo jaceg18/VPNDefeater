@@ -17,7 +17,7 @@ VPNDefeater defeater = new VPNDefeater(provider);
 #### Checking an IP address
 To check if an IP address belongs to a VPN or proxy service, use the isVPN method of the VPNDefeater object.
 
-```
+```java
 String ip = "192.168.0.1";
 boolean isVpn = defeater.isVPN(ip);
 if (isVpn) {
@@ -29,14 +29,14 @@ if (isVpn) {
 #### Retrieving API response
 You can retrieve the API response as a string using the getResponseAsString method of the VPNDefeater object.
 
-```
+```java
 String ip = "192.168.0.1";
 String response = defeater.getResponseAsString(ip);
 ```
 #### Customizing detection settings
 You can customize the detection settings by calling the following methods of the VPNDefeater object:
 
-```
+```java
 // Use VPN detection
 defeater.setUseVpn(true);
 
