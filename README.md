@@ -10,7 +10,7 @@ Java 8 or later.
 To use the VPNDefeater library, you need to create an instance of the VPNDefeater class. 
 You must provide a VPNProvider object that represents the API provider you want to use. In this case, we use ProxyCheck as an example. You can define your own provider class by extending the VPNProvider abstract class.
 
-```
+```java
 VPNProvider provider = new ProxyCheck("your_api_key_here");
 VPNDefeater defeater = new VPNDefeater(provider);
 ```
